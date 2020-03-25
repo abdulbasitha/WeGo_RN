@@ -12,7 +12,7 @@ export default class SignUpScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar translucent backgroundColor="transparent" />
+       <StatusBar barStyle = "light-content"  backgroundColor="#FFFF" />
         <Text style={styles.textProp}>Sign up</Text>
         <View>
           <TextInput
@@ -32,7 +32,9 @@ export default class SignUpScreen extends React.Component {
               </TouchableOpacity>
               <View>
                 <Text style={styles.bodyTxt}>Already a member? </Text>
-                <TouchableOpacity>
+                <TouchableOpacity
+                onPress={()=>this.props.navigation.navigate('Login')}
+                >
                   <Text style={styles.signInTxt}>Sign in </Text>
                 </TouchableOpacity>
               </View>

@@ -5,7 +5,7 @@ export default class SplashScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar hidden={true} />
+        <StatusBar barStyle = "light-content"  backgroundColor="#FFFF" />git
         <Text style={styles.textProp}>WeGo</Text>
       </View>
     );

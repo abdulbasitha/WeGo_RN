@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
@@ -8,11 +8,11 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-export default class LoginScreen extends React.Component {
+ export default class LoginScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar translucent backgroundColor="transparent" />
+       <StatusBar barStyle = "light-content"  backgroundColor="#FFFF" />
         <Text style={styles.textProp}>Login</Text>
         <View>
           <TextInput
@@ -33,7 +33,7 @@ export default class LoginScreen extends React.Component {
               <View>
                 <Text style={styles.bodyTxt}>Create account?</Text>
                 <TouchableOpacity
-                  onPress={() => this.props.navigation.navigator('SignUp')}>
+                  onPress={()=>this.props.navigation.navigate('Signup')}>
                   <Text style={styles.signUpTxt}>Sign up </Text>
                 </TouchableOpacity>
               </View>
