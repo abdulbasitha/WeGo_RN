@@ -41,7 +41,7 @@ class Main extends Component {
         this.setState({timePassed: true});
     }
     render() {
-        {Platform.OS === "ios" &&     <StatusBar barStyle = "light-content"  backgroundColor="#FFFF" />}
+        {Platform.OS === "ios" && <StatusBar barStyle = "light-content"  backgroundColor="" />}
         if (this.state.timePassed==false)
             return <Splash />
             else

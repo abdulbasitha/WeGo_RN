@@ -12,7 +12,7 @@ import {
   render() {
     return (
       <View style={styles.container}>
-       <StatusBar barStyle = "light-content"  backgroundColor="#FFFF" />
+       <StatusBar barStyle = "light-content"  backgroundColor="#000" />
         <Text style={styles.textProp}>Login</Text>
         <View>
           <TextInput
